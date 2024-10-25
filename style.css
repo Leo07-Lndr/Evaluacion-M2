@@ -1,0 +1,58 @@
+/* En el selector body, se elige toda la seccion de body para definir las caracteristicas que toda la pagina tendra */
+body {
+    /* font-family es para definir el tipo de fuente */
+    font-family: sans-serif;
+    /* aqui se define el tamaño de la margen externa */
+    margin: 0;
+}
+
+/* Aqui el selector ".contenedor" selecciona una clase definida como contenedor en el HTML para darle caracteristicas especificas a todo lo que haya dentro de este */
+.contenedor {
+    /* el atributo display define el tipo de visualizacion */
+    display: flex; 
+    /* el flex-wrap define el alineamiento, osea la organizacion de las lineas */
+    flex-wrap: wrap; 
+    /* el justify-content se usa para alinear los elementos en el eje principal en este caso con el space-around se da un espacio igual alrededor de los elementos */
+    justify-content: space-around; 
+    /* padding define la margen o relleno interior */
+    padding: 20px;
+}
+/* el selector .tarjeta elige la clase "tarjeta" para darle unas caracteristicas especificas a lo que este dentro de esta*/
+.tarjeta {
+    /* width define el ancho de las tarjetas */
+    width: 300px; 
+    /* margin para definir la margen exterior de las tarjetas */
+    margin: 10px; 
+    /* en border se define el tipo, el grosor y el color del borde de las targetas */
+    border: 1px solid #ccc; 
+    /* padding para el espaciado entre la margen y el contenido */
+    padding: 20px; 
+    /* el atributo border-radius define el el borde en las esquinas con un estilo circular */
+    border-radius: 5px; 
+    /* box-shadow para dar un efecto de sombra al encabezado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+/* el selector .tarjeta img es para darle sus caracteristicas a las etiquetas img ubicadas en "tarjeta" */
+.tarjeta img {
+    /* whidth para definir el ancho de las tarjetas */
+    width: 100%; 
+    /* height con auto para que la imagen defina automaticamente la altura en base a el la altura original de la imagen y la anchura definida en el width */
+    height: auto; 
+    /* el display se usa con el fin de definir el tipo de visualizacion para las tarjetas */
+    display: block; 
+    /* border-radius para definir el borde */
+    border-radius: 5px 5px 0 0; 
+}
+/* el selector .tarjeta h3 sirve para seleccionar y asignar las caracteristicas que todas las etiqueta h3 que estan en "tarjeta" llevaran  */
+.tarjeta h3 {
+    /* margin-top se usa para establecer el margen superior a un elemento, en este caso a las tarjetas */
+    margin-top: 10px; 
+}
+
+/* con selector .tarjeta p estaremos estableciendo las propiedades a los parrafos (p) que se encuentran en la clase "tarjeta" */
+.tarjeta p {
+    /* para asignar el tamaño del texto, usaremos font-size */
+    font-size: 0.9em; 
+    /* el atributo line-height es para establecer el interlineado */
+    line-height: 1.5; 
+}
